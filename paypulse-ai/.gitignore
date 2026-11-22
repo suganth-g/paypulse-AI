@@ -1,0 +1,162 @@
+# ============================================================
+# PayPulse AI — .gitignore
+# Covers: Java/Maven, Python, Node.js, Docker, IDE, OS, Env
+# ============================================================
+
+# ─── Environment & Secrets ───────────────────────────────────
+.env
+.env.*
+*.env
+!.env.example
+secrets/
+credentials/
+
+# ─── Java / Maven ────────────────────────────────────────────
+target/
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+hs_err_pid*
+replay_pid*
+
+# ─── Gradle (if used later) ──────────────────────────────────
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# ─── Python ──────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+*.egg
+*.egg-info/
+dist/
+eggs/
+parts/
+var/
+sdist/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.manifest
+*.spec
+.pytest_cache/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.ruff_cache/
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytype/
+mlruns/
+*.pkl
+*.joblib
+*.h5
+*.hdf5
+
+# ─── Node.js / React ─────────────────────────────────────────
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-store/
+.npm
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+*.tsbuildinfo
+.next/
+.nuxt/
+dist/
+build/
+.cache/
+.parcel-cache/
+
+# ─── Docker ──────────────────────────────────────────────────
+*.override.yml
+docker-compose.override.yml
+
+# ─── Database ────────────────────────────────────────────────
+*.sql.bak
+*.dump
+*.sqlite
+*.db
+
+# ─── IDEs & Editors ──────────────────────────────────────────
+# IntelliJ IDEA / JetBrains
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+.idea_modules/
+
+# VS Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# Eclipse
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# ─── OS Files ────────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ─── Logs ────────────────────────────────────────────────────
+*.log
+logs/
+*.log.*
+
+# ─── Temporary files ─────────────────────────────────────────
+*.tmp
+*.bak
+*.swp
+*.swo
+*~
+
